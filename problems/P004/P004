@@ -1,0 +1,8 @@
+List=["One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten"]
+t=input("whould you like to start with sample input?(y) or (n):")
+if t=="y":
+    print("Number:8")
+    x=8
+else:
+    x=int(input("Number:"))
+print(List[x-1])

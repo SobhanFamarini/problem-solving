@@ -1,0 +1,16 @@
+t=input("whould you like to start with sample input?(y) or (n):")
+if t=="y":
+    print("Number:25")
+    n=25
+else:
+    n=int(input("Number:"))
+x=0
+y=1
+print(1)
+for i in range(1,n):
+    z=x+y
+    x=y
+    y=z
+    if z>=n:
+        break
+    print(z)

@@ -1,0 +1,19 @@
+t=input("whould you like to start with sample input?(y) or (n):")
+if t=="y":
+    x=120
+    y=30
+else:
+    x=int(input("First number:"))
+    y=int(input("Second number:"))
+def operation(x, y):
+    return(f"{x}+{y}={x+y}")
+def operation_2(x, y):
+    return(f"{x}-{y}={x-y}")
+def operation_3(x, y):
+    return(f"{x}/{y}={x/y}")
+def operation_4(x, y):
+    return(f"{x}*{y}={x*y}")
+print(operation(x, y))
+print(operation_2(x, y))
+print(operation_3(x, y))
+print(operation_4(x, y))

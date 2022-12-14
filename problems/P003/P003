@@ -1,0 +1,9 @@
+t=input("whould you like to start with sample input?(y) or (n):")
+if t=="y":
+    x=1393
+    y=1400
+else:
+    x=int(input("First year:"))
+    y=int(input("Second year:"))
+z=(x-y)*365
+print(f'There ara {abs(z)} days between {x} and {y}')

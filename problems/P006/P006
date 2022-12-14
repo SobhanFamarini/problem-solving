@@ -1,0 +1,10 @@
+t=input("whould you like to start with sample input?(y) or (n):")
+if t=="y":
+    print("Number:3")
+    n=3
+else:
+    n=int(input("Number:"))
+if 1<=n<=1000:
+    print(int(n*(n+1)/2))
+else:
+    print("Number in greater than 1000")

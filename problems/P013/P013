@@ -1,0 +1,18 @@
+t=input("whould you like to start with sample input?(y) or (n):")
+if t=="y":
+    print("Number:4")
+    n=4
+else:
+    n=int(input("Number:"))
+list=[]
+z=n
+for x in range(2,n+1):
+    m=0
+    for i in range(2,x):
+        if x%i==0:
+            m+=1
+    if m==0:
+        while z%x==0:
+            list.append(x)
+            z=z/x
+print(f"Prime factors of {n} are {list}")
