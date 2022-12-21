@@ -1,16 +1,30 @@
 n=int(input("Number:"))
-List=[1,1]
-List2=[1,1]
-z=0
-i=1
-for y in range(1, n+1):
-    for x in range(1, len(List)-1):
-        s=List2[z]
-        s2=List2[i]
+List=[]
+List2=[]
+for x in range(0, 2*n-1):
+    List.append(0)
+List[n-1]=1
+z=""
+for j in range(0, 2*n-1):
+    if List[j]==0:
+        z+=" "
+    else:
+        z+=str(List[j])
+print(z)
+for k in range(1, n):
+    z=""
+    for i in range(0, 2*n-2):
+        s=List[i-1]
+        s2=List[i+1]
         r=s+s2
-        List2.insert(1,r)
-        z+=1
-        i+=1
+        List2.append(r)
+    List2.append(0)
     List=List2
-    List2=[1,1]
-    print(List)
+    List2=[]
+    if k==n-1:List[2*n-2]=1
+    for j in range(0, 2*n-1):
+        if List[j]==0:
+            z+=" "
+        else:
+            z+=str(List[j])
+    print(z)
