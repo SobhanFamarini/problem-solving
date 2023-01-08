@@ -1,34 +1,5 @@
 x={"Mercury":57, "Venus":108, "Earth":150, "Mars":228, "Jupiter":779, "Saturn":1430, "Uranus":2880, "Neptune":4500}
 import math
-z=math.ceil(x["Mercury"]/57)
-z2=math.ceil(x["Venus"]/57)
-z3=math.ceil(x["Earth"]/57)
-z4=math.ceil(x["Mars"]/57)
-z5=math.ceil(x["Jupiter"]/57)
-z6=math.ceil(x["Saturn"]/57)
-z7=math.ceil(x["Uranus"]/57)
-z8=math.ceil(x["Neptune"]/57)
-t=""
-t2=""
-t3=""
-t4=""
-t5=""
-t6=""
-t7=""
-t8=""
-for y in range(1, z+1):t+="-"
-for y in range(1, z2+1):t2+="-"
-for y in range(1, z3+1):t3+="-"
-for y in range(1, z4+1):t4+="-"
-for y in range(1, z5+1):t5+="-"
-for y in range(1, z6+1):t6+="-"
-for y in range(1, z7+1):t7+="-"
-for y in range(1, z8+1):t8+="-"
-print(f"Sun{t}Mercury")
-print(f"Sun{t2}Venus")
-print(f"Sun{t3}Earth")
-print(f"Sun{t4}Mars")
-print(f"Sun{t5}Jupiter")
-print(f"Sun{t6}Saturn")
-print(f"Sun{t7}Uranus")
-print(f"Sun{t8}Neptune")
+for y in x:
+    z=math.ceil(x[y]/57)
+    print("sun" + z * "-" + y)
