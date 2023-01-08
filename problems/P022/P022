@@ -1,0 +1,8 @@
+n=int(input("Number:"))
+n2=input("First List:").split()
+n3=input("Second List:").split()
+list=[]
+for i in range(len(n2)):
+    s=int(n2[i])+int(n3[i])
+    list.append(int(s))
+print(list)
