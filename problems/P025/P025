@@ -1,0 +1,6 @@
+n=int(input("First Number:"))
+n2=int(input("Second Number:"))
+z=0
+for x in range(0, n):
+    z+=n2
+print(z)
