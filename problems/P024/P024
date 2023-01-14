@@ -1,0 +1,11 @@
+import requests
+from bs4 import BeautifulSoup
+from collections import Counter
+def get_top_words(url):
+    response = requests.get(url)
+    soup = BeautifulSoup(response.text, 'html.parser')
+    text = soup.get_text()
+    words = text.split()
+    word_counts = Counter(words)
+    print(word_counts.most_common(10))
+get_top_words("https://en.wikipedia.org/wiki/Computer_science")
