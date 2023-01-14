@@ -1,6 +1,13 @@
-n=int(input("Number:"))
-n2=input("First List:").split()
-n3=input("Second List:").split()
+t=input("whould you like to start with sample input?(y) or (n):")
+if t=="y":
+    print("First List:12 45 67 34")
+    print("Second List:18 257 54 93")
+    n2=[12, 45, 67, 34]
+    n3=[18, 257, 54, 93]
+else:
+    n=int(input("Number:"))
+    n2=input("First List:").split()
+    n3=input("Second List:").split()
 list=[]
 for i in range(len(n2)):
     s=int(n2[i])+int(n3[i])
