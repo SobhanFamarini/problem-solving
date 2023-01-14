@@ -1,0 +1,22 @@
+List=[]
+List2=[]
+x = input("n, m, p:").split()
+n=int(x[0])
+m=int(x[1])
+p=int(x[2])
+for i in range(0, n):
+    a = input("First Matrix:").split()
+    List.append(a)
+for i in range(0, m):
+    b = input("Second Matrix:").split()
+    List2.append(b)
+for i in range(0, n):
+    def matrix_product():
+        List3=[]
+        for j in range(0, p):
+            c=0
+            for k in range(0, m):
+                c+=int(List[i][k])*int(List2[k][j])
+            List3.append(c)
+        return(List3)
+    print(matrix_product())
